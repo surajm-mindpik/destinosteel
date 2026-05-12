@@ -35,7 +35,10 @@ body {
 
 /* Logo */
 .logo img {
-    height: 60px;
+    height: 70px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
 }
 
 /* Navigation */
@@ -820,6 +823,44 @@ body {
     color: #777;
 }
 
+/* Offerings Section */
+.offerings-section {
+    padding: 60px 12% 60px 14%; /* top right bottom left */
+    background-color: #ffffff;
+}
+
+.offerings-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.offerings-container h2 {
+    color: #c40000;
+    margin-bottom: 15px;
+    font-size: 28px;
+    border-left: 5px solid #c40000;
+    padding-left: 10px;
+}
+
+.offerings-container p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.offerings-container ul {
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+.offerings-container ul li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
 
 /* ===== Service Banner ===== */
 .service-banner {
@@ -1557,7 +1598,7 @@ body {
 
 /* Logo */
 .footer-logo {
-    width: 150px;
+    width: 50px;
     margin-bottom: 15px;
 }
 
@@ -1566,6 +1607,7 @@ body {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 /* Social Icons */
