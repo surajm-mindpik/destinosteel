@@ -71,7 +71,7 @@
 <!-- Video Banner Section -->
 <section class="video-banner">
 
-    <video autoplay muted loop playsinline class="banner-video">
+    <!-- <video autoplay muted loop playsinline class="banner-video">
         <source src="image/index-banner.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -85,7 +85,18 @@
         <p>
             Destino Steels Industries Private Limited is a specialized manufacturer based in Odisha, India, that provides adjustable display and storage solutions tailored for various retail environments. The company focuses on delivering high-quality, design-driven systems for large-scale retail projects. 
         </p>
+    </div> -->
+
+   
+    
+    
+    <div class="home-slider">
+        <img src="image/slider1.png" class="home-slide active" alt="">
+        <img src="image/slider2.jpeg" class="home-slide" alt="">
+        <img src="image/slider3.jpeg" class="home-slide" alt="">
     </div>
+
+</section>
 
 </section>
 
@@ -99,11 +110,9 @@
     <div class="column hover-bg">
         <div class="column-content">
             <h2>Retail Solution</h2>
-            <p>
-                Velca Racks offers comprehensive retail solutions designed 
-                to optimize your store's efficiency and appeal. Our products 
-                include Hypermarket Shelving.
-            </p>
+            <p style="text-align: justify; text-justify: inter-word;">
+    Destino Racks provides complete retail storage and display solutions aimed at enhancing store organization, functionality, and customer experience. Our range of products includes high-quality hypermarket shelving systems.
+</p>
             <a href="." class="read-more-btn">Read More</a>
             <!-- <a href="retail-solution.html" class="read-more-btn">Read More</a> -->
         </div>
@@ -114,8 +123,7 @@
         <div class="column-content">
             <h2>Industrial Solution</h2>
             <p>
-                Heavy-duty warehouse racking systems designed for maximum 
-                storage capacity, durability and operational efficiency.
+                Robust warehouse racking systems engineered to maximize storage space, ensure long-lasting performance, and enhance operational productivity.
             </p>
             <a href="." class="read-more-btn">Read More</a>
             <!-- <a href="industrial-solution.html" class="read-more-btn">Read More</a> -->
@@ -127,8 +135,7 @@
         <div class="column-content">
             <h2>Specialised Solution</h2>
             <p>
-                Custom-engineered storage systems tailored to meet unique 
-                space requirements with innovative and flexible designs.
+                Bespoke storage systems designed to accommodate specific space needs through adaptable layouts and innovative engineering.
             </p>
             <a href="." class="read-more-btn">Read More</a>
             <!-- <a href="specialised-solution.html" class="read-more-btn">Read More</a> -->
@@ -251,113 +258,6 @@
     </div>
 </section>
 
-<section class="image-marquee">
-    <div class="marquee-wrapper">
-        <div class="marquee-content">
-            <img src="image/img-1.webp" alt="Image 1">
-            <img src="image/img-2.webp" alt="Image 2">
-            <img src="image/img-3.webp" alt="Image 3">
-            <img src="image/img-4.webp" alt="Image 4">
-            <img src="image/img-5.webp" alt="Image 5">
-            <img src="image/img-6.webp" alt="Image 6">
-            <img src="image/img-7.webp" alt="Image 7">
-            <img src="image/img-8.webp" alt="Image 8">
-        </div>
-    </div>
-</section>
-
-<!-- Image Banner With Center Text -->
-<section class="cta-image-banner">
-
-    <div class="banner-overlay">
-        <div class="banner-content">
-            <h2>
-                Your Trusted Partner in <br>
-                Racking and Storage Solutions
-            </h2>
-
-            <p>
-                Ready to elevate your space with Velca’s innovative solutions? 
-                Get in touch with us today to learn more about our products and 
-                discover how we can help you achieve your goals.
-            </p>
-
-            <a href="contact.html" class="contact-btn">Contact Now</a>
-        </div>
-    </div>
-
-</section>
-
-<!-- Recent Projects Section -->
-<section class="recent-projects">
-
-    <div class="section-title">
-        <h2>
-            <span class="black-text">Explore</span>
-            <span class="red-text">Recent Projects</span>
-        </h2>
-    </div>
-
-    <div class="projects-wrapper">
-
-        <!-- Project 1 -->
-        <div class="project-card">
-            <img src="image/k2.jpg" alt="Project 1">
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-            <img src="image/k1.jpg" alt="Project 2">
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-            <img src="image/k3.jpg" alt="Project 3">
-        </div>
-
-    </div>
-
-</section>
-
-<!-- Latest News Section -->
-<section class="latest-news">
-
-    <div class="section-title">
-        <h2>
-            <span class="red-text">Latest</span>
-            <span class="black-text">News & Articles</span>
-        </h2>
-    </div>
-
-    <div class="news-wrapper">
-
-        <!-- Card 1 -->
-        <div class="news-card">
-            <img src="image/a1.webp" alt="Retail News">
-
-            <div class="news-content">
-                <h3>Transforming Retail Spaces Worldwide</h3>
-                <a href="#" class="read-btn">Read More</a>
-            </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="news-card">
-            <img src="image/a2.webp" alt="Retail Solutions">
-
-            <div class="news-content">
-                <h3>
-                    Solving Retail Challenges: Velca’s Innovative 
-                    Solutions for Maximum Impact
-                </h3>
-                <a href="#" class="read-btn">Read More</a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
 <section class="latest-news">
 
     <div class="section-title">
@@ -411,8 +311,6 @@
     </div>
 
 </section>
-
-</body>
 
 <!-- Footer Section -->
 <!-- FOOTER SECTION -->
@@ -512,5 +410,43 @@ Janla, Jatani, Bhubaneswar, Khordha, Odisha-752054</p>
 
 
 </div>
+
+
+
+
+
+<script>
+const slides = document.querySelectorAll(".home-slide");
+let current = 0;
+
+function showSlide(index){
+
+    slides.forEach(slide=>{
+        slide.style.left="100%";
+        slide.classList.remove("active");
+    });
+
+    slides[index].style.left="0";
+    slides[index].classList.add("active");
+}
+
+showSlide(current);
+
+setInterval(()=>{
+    current++;
+
+    if(current>=slides.length){
+        current=0;
+    }
+
+    showSlide(current);
+
+},3000);
+</script>
+
+
+</body>
+
+
 
 </html>

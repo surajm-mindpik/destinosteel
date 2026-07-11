@@ -628,37 +628,108 @@ body {
 }
 
 /* ===== Three Column Section ===== */
-.about-three-column {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    padding: 70px 10%;
-    background: #f9f9f9;
+/* ABOUT SECTION */
+
+.about-section{
+    padding:80px 8%;
+    background:#fff;
 }
 
-.about-box {
-    flex: 1;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
 }
 
-.about-box:hover {
-    transform: translateY(-8px);
+.section-title span{
+    color:#c60000;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    position:relative;
 }
 
-.about-box h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #b30000;
+.section-title span::before,
+.section-title span::after{
+    content:"";
+    width:70px;
+    height:2px;
+    background:#c60000;
+    position:absolute;
+    top:50%;
 }
 
-.about-box p {
-    font-size: 15px;
-    line-height: 1.8;
-    color: #333;
+.section-title span::before{
+    right:110%;
+}
+
+.section-title span::after{
+    left:110%;
+}
+
+.section-title h2{
+    font-size:48px;
+    color:#111;
+    margin:15px 0;
+    font-weight:700;
+}
+
+.section-title p{
+    max-width:700px;
+    margin:auto;
+    color:#555;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.about-three-column{
+    display:flex;
+    gap:30px;
+    margin-top:50px;
+}
+
+.about-box{
+    flex:1;
+    background:#fff;
+    padding:40px 30px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.about-box:hover{
+    transform:translateY(-8px);
+}
+
+.about-icon{
+    width:90px;
+    height:90px;
+    background:#fdeaea;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 25px;
+}
+
+.about-icon i{
+    font-size:42px;
+    color:#b00000;
+}
+
+.about-box h3{
+    font-size:30px;
+    color:#b00000;
+    margin-bottom:18px;
+}
+
+.about-box p{
+    color:#444;
+    line-height:1.9;
+    font-size:17px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* ===== MD Section ===== */
@@ -731,47 +802,103 @@ body {
 }
 
 /* ===== Feature Section ===== */
-.feature-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 80px 10%;
-    background: #f9f9f9;
-    text-align: center;
+/*=========================
+  OUR CORE VALUES
+=========================*/
+
+.feature-section{
+    padding:80px 8%;
+    background:#fff;
 }
 
-.feature-box {
-    flex: 1;
-    padding: 30px;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
+.feature-section .section-title{
+    text-align:center;
+    margin-bottom:60px;
 }
 
-.feature-box:hover {
-    transform: translateY(-8px);
+.feature-section .section-title span{
+    color:#c60000;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    position:relative;
 }
 
-/* Icon Styling */
-.feature-icon {
-    font-size: 30px;
-    color: #b30000;
-    margin-bottom: 15px;
+.feature-section .section-title span::before,
+.feature-section .section-title span::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    width:70px;
+    height:2px;
+    background:#c60000;
 }
 
-.feature-box h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #000;
+.feature-section .section-title span::before{
+    right:110%;
 }
 
-.feature-box p {
-    font-size: 15px;
-    line-height: 1.8;
-    color: #555;
+.feature-section .section-title span::after{
+    left:110%;
 }
 
+.feature-section .section-title h2{
+    font-size:48px;
+    font-weight:700;
+    color:#111;
+    margin-top:15px;
+}
+
+.feature-row{
+    display:flex;
+    gap:30px;
+}
+
+.feature-box{
+    flex:1;
+    background:#fff;
+    padding:40px 30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-8px);
+}
+
+.feature-icon{
+    width:90px;
+    height:90px;
+    background:#fdeaea;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 25px;
+}
+
+.feature-icon i{
+    font-size:40px;
+    color:#b00000;
+}
+
+.feature-box h3{
+    font-size:30px;
+    color:#111;
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+.feature-box p{
+    font-size:17px;
+    line-height:1.9;
+    color:#555;
+    text-align:justify;
+    text-justify:inter-word;
+}
 /* ===== Team Section ===== */
 /* Our Team Section */
 .our-team {
@@ -1002,54 +1129,52 @@ body {
     text-align: center;
 }
 
-/* VIDEO BANNER SECTION */
-.video-banner {
-    position: relative;
-    width: 100%;
-    height: 85vh;
-    overflow: hidden;
+/* Home Slider */
+
+.video-banner{
+    width:100%;
+    height:85vh;
+    overflow:hidden;
+    position:relative;
 }
 
-.banner-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.home-slider{
+    width:100%;
+    height:100%;
+    position:relative;
 }
 
-/* Dark Overlay Effect */
-.video-banner::after {
-    content: "";
+.home-slide{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 100%;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+
+    object-fit: cover;
+    object-position: top center;   /* এই লাইনটা নতুন যোগ করুন */
+
+    transition: left .8s ease;
 }
 
-/* Text Overlay */
-.video-overlay {
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
-    color: #fff;
-    max-width: 600px;
-    z-index: 2;
+.home-slide.active{
+    left:0;
 }
+/* Remove old video styles */
 
-.video-overlay h1 {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
+/* .banner-video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+} */
 
-.video-overlay p {
-    font-size: 17px;
-    line-height: 1.6;
-}
+/* .video-banner::after{
+    display:none;
+} */
 
+/* .video-overlay{
+    display:none;
+} */
 /* Red Horizontal Bar */
 .red-bar {
     width: 100%;
@@ -1717,5 +1842,4 @@ body {
 .whatsapp a span {
     color: white;     /* White Text */
 }
-
 
