@@ -183,6 +183,20 @@ body {
     left: 0;
 }
 
+.banner-text {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 18px;
+}
+
 /* Overlay Text */
 .banner-overlay {
     position: absolute;
