@@ -26,10 +26,10 @@
 
 
         <div class="social-icons">
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="."><i class="fab fa-youtube"></i></a>
+            <a href="."><i class="fab fa-linkedin"></i></a>
+            <a href="."><i class="fab fa-facebook"></i></a>
+            <a href="."><i class="fab fa-instagram"></i></a>
         </div>
     </div>
 
@@ -75,7 +75,7 @@
     <!-- Contact Banner Section -->
     <div class="contact-banner">
 
-        <img src="image/contact-banner.jpg" alt="Contact Banner">
+        <img src="image/contact_us_banner.jpeg" alt="Contact Banner">
 
         <div class="banner-overlay">
             <h1>Contact Us</h1>
@@ -100,20 +100,23 @@
                 We’ll get back to you as soon as possible.
             </p>
 
-            <form>
+            <form action="contact.php" method="POST">
+
                 <label>Your Name</label>
-                <input type="text" placeholder="Enter your name">
+                <input type="text" name="name" placeholder="Enter your name" required>
 
                 <label>Your Email</label>
-                <input type="email" placeholder="Enter your email">
+                <input type="email" name="email" placeholder="Enter your email" required>
 
                 <label>Subject</label>
-                <input type="text" placeholder="Enter subject">
+                <input type="text" name="subject" placeholder="Enter subject" required>
 
                 <label>Your Message</label>
-                <textarea placeholder="Enter your message"></textarea>
+                <textarea name="message" placeholder="Enter your message" required></textarea>
 
-                <button type="submit" class="submit-btn">Submit</button>
+                <button type="submit" class="submit-btn">
+                    Submit
+                </button>
 
             </form>
         </div>
@@ -136,10 +139,10 @@
             <hr>
 
             <div class="contact-social">
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="."><i class="fab fa-youtube"></i></a>
+                <a href="."><i class="fab fa-linkedin-in"></i></a>
+                <a href="."><i class="fab fa-facebook-f"></i></a>
+                <a href="."><i class="fab fa-instagram"></i></a>
             </div>
 
         </div>
@@ -175,10 +178,10 @@
                 </p>
 
                 <div class="footer-social">
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="."><i class="fab fa-youtube"></i></a>
+                    <a href="."><i class="fab fa-linkedin"></i></a>
+                    <a href="."><i class="fab fa-facebook"></i></a>
+                    <a href="."><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
 
@@ -188,10 +191,10 @@
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="#">Retail Solution</a></li>
-                    <li><a href="#">Industrial Solution</a></li>
-                    <li><a href="#">Specialised Solution</a></li>
-                    <li><a href="#">Trolly and Baskets</a></li>
+                    <li><a href=".">Retail Solution</a></li>
+                    <li><a href=".">Industrial Solution</a></li>
+                    <li><a href=".">Specialised Solution</a></li>
+                    <li><a href=".">Trolly and Baskets</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
@@ -246,7 +249,7 @@
         </div>
 
         <div class="whatsapp">
-            <a href="#">
+            <a href="https://web.whatsapp.com/send?phone=+919124619293&text=Hello! Destinosteel Industries">
                 <i class="fab fa-whatsapp"></i>
                 <span>WhatsApp</span>
             </a>
