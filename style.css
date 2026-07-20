@@ -1847,22 +1847,90 @@ body {
     font-size: 14px;
 }
 
-/* WhatsApp Icon */
-.whatsapp a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+/* Contact Handles */
+/* ================= FLOATING ICON BUTTONS ONLY ================= */
+.floating-contact {
+    position: fixed;
+    right: 18px;
+    bottom: 22px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.float-btn {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    gap: 6px;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+    transition: all .3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.whatsapp a i {
-    color: #25D366;
-    /* Green Icon */
+/* hide text */
+.float-btn span {
+    display: none;
 }
 
-.whatsapp a span {
-    color: white;
-    /* White Text */
+.float-btn:hover {
+    transform: translateY(-4px) scale(1.08);
+    color: #fff;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.24);
+}
+
+/* glossy effect */
+.float-btn::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 60%;
+    height: 35%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.22);
+}
+
+/* CALL */
+/* .call-btn {
+    background: linear-gradient(145deg, #2563eb, #1d4ed8);
+} */
+
+/* SMS */
+/* .sms-btn {
+    background: linear-gradient(145deg, #f97316, #ea580c);
+} */
+
+/* WHATSAPP */
+.whatsapp-btn {
+    background: linear-gradient(145deg, #22c55e, #16a34a);
+}
+
+/* MOBILE */
+@media(max-width:768px) {
+    .floating-contact {
+        right: 12px;
+        bottom: 14px;
+        gap: 12px;
+    }
+
+    .float-btn {
+        width: 52px;
+        height: 52px;
+        font-size: 20px;
+    }
+}
+
+/* Contact Handles */
+
+.choose-title span::before,
+.choose-title span::after {
+    display: none;
 }
